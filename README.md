@@ -1,1 +1,2 @@
-# Stone-paper-scissors-game
+# Rock-Paper-Scissors
+Rock-Paper-Scissors game in JS. 

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background-color: rgba(102, 6, 65, 0.918);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scores {
+    color: rgba(248, 244, 244, 0.699);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+.scores h1 {
+    font-size: 2em;
+}
+.scores p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.intro {
+    color: rgba(248, 244, 244, 0.699);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+.intro img{
+    height: 250px;
+}
+.intro h1 {
+    font-size: 4em;
+}
+.intro button,
+.match button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: none;
+    color: rgba(248, 244, 244, 0.699);
+    font-size: 1.5em;
+    background: rgba(170, 71, 14, 0.788);
+    border-radius: 4px;
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+.winner {
+    color: rgba(248, 244, 244, 0.699);
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 80px;
+}
+.hands ,
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 80px;
+} 
+
+.options button{
+    margin-left: 20px;
+}
+
+.hands img {
+    width: 180px;
+    height: 180px;
+}
+
+.computer-hand {
+    transform: rotateY(180deg);
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}

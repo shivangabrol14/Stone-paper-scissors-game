@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a simple implementation of grade-school classic “rock paper scissors” made in Vanilla JavaScript.
+The game plays against the computer, calculates points and displays results for each round." />
+   <meta name="title" property="og:title" content="Rock Paper Scissors" />
+   <meta property="og:type" content="Website" />
+  <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/50606791113_971508eb1c_c.jpg" />
+  <meta name="description" property="og:description" content="Rock Paper Scissors" /><meta name="author" content="Emmah Kimari" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <section class="game">
+        <div class="scores">
+            <div class="player-score">
+                <h1>Player</h1>
+                <p>0</p>
+            </div>
+            <div class="cpu-score">
+                <h1>Computer</h1>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Rock-Paper-Scissors</h1>
+            <img src="assets/intro.png" alt="rock paper scissors image">
+            <button>Let's Play</button>
+        </div>
+
+        <div class="match fadeOut">
+            <h2 class="winner">Choose an option</h2>
+            <div class="hands">
+                <img class="player-hand" src= "./assets/rock.png" >
+                <img class="computer-hand" src= "./assets/rock.png" >
+            </div>
+
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
